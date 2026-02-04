@@ -16,18 +16,19 @@ public class Book {
     private int ssn;
     private String Barcode;
     private int Year;
+    private String About;
 
     public Book() {
         // Required by JAXB
     }
 
-    public Book(String title, String author, int ssn, String Barcode,int Year) {
+    public Book(String title, String author, int ssn, String Barcode,int Year,String About) {
         this.title = title;
         this.author = author;
         this.ssn=ssn;
         this.Barcode= Barcode;
         this.Year=Year;
-        
+        this.About=About;
     }
 
     @XmlElement
@@ -38,7 +39,14 @@ public class Book {
     public void setTitle(String title) {
         this.title = title;
     }
+      @XmlElement
+    public String getAbout() {
+        return About;
+    }
 
+    public void setAbout(String About) {
+        this.About = About;
+    }
     @XmlElement
     public String getAuthor() {
         return author;

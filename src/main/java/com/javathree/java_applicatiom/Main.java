@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-        Book book = new Book("Java Basics", "Tolani",19625,"BDP001",2019);
+        Book book = new Book("Java Basics", "Tolani",19625,"BDP001",2019,"tells you about the book");
 
         JAXBContext context = JAXBContext.newInstance(Book.class);
         Marshaller marshaller = context.createMarshaller();
