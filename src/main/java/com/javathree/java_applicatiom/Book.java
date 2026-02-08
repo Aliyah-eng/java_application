@@ -16,7 +16,7 @@ public class Book {
     private int ssn;
     private String Barcode;
     private int Year;
-    private String Abouts;
+    private String About;
 
     public Book() {
         // Required by JAXB
